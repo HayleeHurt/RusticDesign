@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Design by Leigha</title>
+    <link rel="stylesheet" href="/public/css//materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/public/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="/public/css/final.css">
+	<script src="/public/js/myscripts.js"></script>
+</head>
+
+<body>
+<div id="clearfloat">
+</div>
+	<nav class="nav-extended card-panel indigo darken-4 ">
+		<div class="nav-wrapper">
+			<div class= "centers align">
+				<a href="#" class="brand-logo">Rustic Design By Leigha</a>
+			</div>
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"></a>
+		<a href="/index.html"><img src="/public/logo/logo copy.PNG" width="100" height="100"></a>
+		<ul class="tabs tabs-transparent">
+			<li class="tab"><a href="/public/about.html">About Us</a></li>
+			<li class="tab"><a href="/public/signs.html">Shop Our Signs</a></li>
+			<li class="tab"><a href="/public/contact.html">Contact Us</a></li>
+			<li class="tab"><a href="/public/order.html">Order Here</a></li>
+		</ul>
+		</div>
+	</nav>
+
+<main>
+
+
+<div id="info">
+	<div class="container">
+		<div class="carousel-view">
+			<button id="prev-btn" class="prev-btn">
+				<svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+					<path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+				</svg>
+			</button>
+			<div id="item-list" class="item-list">
+				<img id="item" class="item" src="/public/img/project1.jpg">
+				<img id="item" class="item" src="/public//img/project2.jpg">
+				<img id="item" class="item" src="/public//img/sign1.jpg">
+				<img id="item" class="item" src="/public//img/sign2.jpg">
+			</div>
+			<button id="next-btn" class="next-btn">
+				<svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+					<path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+				</svg>
+			</button>
+		</div>
+	</div>
+	
+</div>
+
+<div class="row">
+	<div class="col s7">
+		<div id="leigha">
+			<style>
+			#leigha {background-image:url(/public/img/leigha.jpeg);
+				background-repeat:no-repeat;
+				min-height:40em;
+				max-height:100em;
+				width:auto;
+				padding:1em;
+				background-size:100% 100%;
+				margin-left:1em;
+				}
+			</style>
+		</div>
+	</div>
+	<div class="col s5">
+		<p>Rustic Design By Leigha, is a custom design brand that specializes in making state of the art wooden decor and furniture.
+		The brand is both founded and ran by Leigha Torney. The company first started in 2016 out of her parents garage in Western Shawnee, KS. 
+		Leigha has continued to grow her brand to the size it is today and has expanded her abilities in both sign and furniture craftsmanship. 
+		Leigha is currently in the process of completing the Interior Design program at a local community college. Alongwith continuing to expand rustic design,
+		she hopes to become a licensed interior designer with hope of remodeling homes in the near future!</p>
+	</div>
+</div>
+
+
+<script> 
+	const prev = document.getElementById('prev-btn')
+	const next = document.getElementById('next-btn')
+	const list = document.getElementById('item-list')
+
+	const itemWidth = 150
+	const padding = 10
+
+	prev.addEventListener('click',()=>{
+	list.scrollLeft -= itemWidth + padding
+	})
+
+	next.addEventListener('click',()=>{
+	list.scrollLeft += itemWidth + padding
+	})
+</script>
+
+<div class="clearfloat">
+</div>
+
+<footer>
+	<div class="card-panel indigo darken-4 center alignd">
+		<a href="https://www.instagram.com/rustic.design.by.leigha/?hl=en">
+		<img src="/public/social/Instagram_Glyph_White.svg"
+		width="50"
+		height="50" alt="Instagram Logo">
+
+		<a href="https://www.facebook.com/RDBL2021/">
+		<img src="/public/social/f_logo_RGB-White_100.png"
+		width="50"
+		height="50" alt="Facebook Logo">
+
+		<a href="https://www.tiktok.com/@rustic.design.by.leigha">
+		<img src="/public/social/TikTok-logo-RGB-Stacked-White.png"
+		width="50"
+		height="50" alt="TikTok Logo">
+		<br>
+		<br>
+		<a href="mailto:rusticdesignbyleigha@gmail.com">rusticdesignbyleigha@gmail.com</a>
+	</div>
+</footer>
+
+</main>
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="/materialize.min.js"></script>
+</body>
+</html>

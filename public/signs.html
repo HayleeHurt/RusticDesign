@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Design by Leigha</title>
+    <link rel="stylesheet" href="/public/css//materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/public/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="/public/css/final.css">
+	<script src="/public/js/myscripts.js"></script>
+</head>
+
+<body>
+<div id="clearfloat">
+</div>
+	<nav class="nav-extended card-panel indigo darken-4 ">
+		<div class="nav-wrapper">
+			<div class= "centers align">
+				<a href="#" class="brand-logo">Rustic Design By Leigha</a>
+			</div>
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"></a>
+		<a href="/index.html"><img src="/public/logo/logo copy.PNG" width="100" height="100"></a>
+			<ul class="tabs tabs-transparent">
+			<li class="tab"><a href="/public/about.html">About Us</a></li>
+			<li class="tab"><a href="/public/signs.html">Shop Our Signs</a></li>
+			<li class="tab"><a href="/public/contact.html">Contact Us</a></li>
+			<li class="tab"><a href="/public/order.html">Order Here</a></li>
+		</ul>
+		</div>
+	</nav>
+
+<main>
+
+
+
+	<ul class="collapsible">
+		<li>
+		  <div class="collapsible-header"><img src="/public/img/sign1.jpg"
+			width="200"
+			height="150" alt="Standard Name Sign"></div>
+		  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+		</li>
+		<li>
+		  <div class="collapsible-header"><img src="/public/img/sign3.jpg"
+			width="200"
+			height="150" alt="Large Name Sign"></div>
+		  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+		</li>
+		<li>
+		  <div class="collapsible-header"><img src="/public/img/sign4.jpeg"
+			wdith="200"
+			height="150" alt="College Signs"></div>
+		  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+		</li>
+	</ul>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+   		 var elems = document.querySelector('.collapsible');
+   		 var instances = M.Collapsible.init(elems);
+   			 instances.open();
+		});   
+
+		// Or with jQuery
+
+		$(document).ready(function(){
+			$('.tabs').tabs();
+		});
+
+	</script>
+
+
+	<div class="clearfloat">
+
+
+	<footer>
+		<div class="card-panel indigo darken-4 center alignd">
+			<a href="https://www.instagram.com/rustic.design.by.leigha/?hl=en">
+			<img src="/public/social/Instagram_Glyph_White.svg"
+			width="50"
+			height="50" alt="Instagram Logo">
+
+			<a href="https://www.facebook.com/RDBL2021/">
+			<img src="/public/social/f_logo_RGB-White_100.png"
+			width="50"
+			height="50" alt="Facebook Logo">
+
+			<a href="https://www.tiktok.com/@rustic.design.by.leigha">
+			<img src="/public/social/TikTok-logo-RGB-Stacked-White.png"
+			width="50"
+			height="50" alt="TikTok Logo">
+			<br>
+			<br>
+			<a href="mailto:rusticdesignbyleigha@gmail.com">rusticdesignbyleigha@gmail.com</a>
+		</div>
+	</footer>
+
+</main>
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="/materialize.min.js"></script>
+</body>
+</html>
